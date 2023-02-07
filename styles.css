@@ -1,0 +1,459 @@
+/* Font Imports */
+
+@font-face {
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkB_XvYC6trAT7RQNNK2EG7SIwPWMNnCVytER0IPh7KX59Z0inOKbGkv.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkB_XvYC6trAT7RQNNK2EG7SIwPWMNnCVytER0IPh7KX59Z0inOKbGkv.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v22/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v30/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Universal Styles */
+html {
+    scroll-padding-top: 8em;
+    font-size: 10px;
+    font-family: Karla, serif;
+}
+
+body {
+    text-align: center;
+    padding-top: 8em;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    color: #282828;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.title img {
+    height: 3rem;
+    width: auto;
+}
+
+.title h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    height: 4.25rem;
+    background-color: #ecaaa5;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 85%;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    padding-right: 10px;
+    padding-top: .2rem;
+    font-size: 1.75rem;
+}
+
+nav p {
+    padding-bottom: .7rem;
+}
+
+nav a {
+    background-color: white;
+    border-radius: .5rem;
+    opacity: 90%;
+    padding: .3rem;
+    color: #666563;
+    border: 1px solid #8b7475;
+}
+
+nav a:hover {
+    opacity: 100%;
+    background-color: #F8F8F8;
+}
+
+/* Logo & Text Styles */
+
+#logo {
+    height: 30rem;
+    width: auto;
+}
+
+/* Nav Styles */
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a {
+    background-color: transparent;
+    border: 0px solid;
+    font-weight: 300;
+    color: black;
+    padding: 0 4rem;
+}
+
+.line {
+    width: 70%;
+}
+
+
+/* Portfolio Styles */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3rem;
+    padding-top: 1rem;
+}
+
+.portfolioContent {
+    background-color: #b2918d;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.secondRow {
+    background-color: #d1a99c;
+}
+
+.portfolioContent hr {
+    width: 80%;
+    border: none;
+    height: 1px;
+    color: #8c7376;
+    background-color: #8c7376;
+}
+
+.photoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.photoRow img {
+    height: 25rem;
+    width: auto;
+    border: .5rem solid white;
+}
+
+.photoRow img:hover {
+    height: 26rem;
+    width: auto;
+}
+
+.portfolioContent h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 2rem;
+    font-family: "Merriweather";
+    font-weight: 700;
+    color: #101010;
+}
+
+.photoRow h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Character Styles */
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.characterRow {
+    padding-top: 2rem;
+    width: 45%
+}
+
+.characters .photo img {
+    height: 32rem;
+    width: auto;
+}
+
+
+/* Convention Dates Styles*/
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    grid-gap: 3rem;
+    padding-top: 1rem;
+}
+
+table {
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+th {
+    background-color: #f39eaf;
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 2rem;
+    font-family: "Merriweather";
+    font-weight: 700;
+    color: #101010;
+    border-bottom: 1px solid #6a6967;
+}
+
+td {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #F0F0F0;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Footer Styles */
+
+footer {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 1245px) {
+    .portfolioContent {
+        width: 70%;
+            gap: 1rem;
+    }
+    
+    .porfolioContent img {
+        width: 30rem;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    html {
+        text-align: center;
+    }
+    
+    body {
+        display: inline-block;
+      margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .portfolioContent {
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .photo img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .photo img:hover {
+        width: 80%;
+        height: auto;
+    }
+    
+    .navigation li {
+        width: 50%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .navigation ul {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    td {
+        font-size: 1.5rem;
+        vertical-align: middle;
+        vertical-align: middle;
+    }
+    
+    .mobile {
+        display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 1rem;
+    }
+    
+    .desktop {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1245px) and (min-width: 451px){
+    .photoRow h2 {
+        font-size: 3rem;
+    }
+    
+    .portfolioContent h3 {
+        font-size: 3.5rem;
+    }
+    
+    h1 {
+        font-size: 5rem;
+    }
+    
+    .title img {
+    height: 5rem;
+    width: auto;
+}
+}
+
+@media only screen and (max-width: 450px) {
+   #logo {
+    height: 18rem;
+    width: auto;
+} 
+    
+    .mobile {
+        display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 1rem;
+    }
+    
+    .desktop {
+        display: none;
+    }
+    
+    .navigation li {
+        padding: 0;
+        margin: 0 auto;
+        width: auto;
+        font-size: 2.2rem;
+    }
+    
+    .navigation ul {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    .dates {
+        padding-bottom: 2rem;
+    }
+    
+    footer {
+        font-size: 1.25rem;
+    }
+    
+    
+}
